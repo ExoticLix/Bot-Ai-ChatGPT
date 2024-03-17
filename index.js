@@ -1,6 +1,7 @@
 
 require('dotenv/config');
 const { Client, IntentsBitField } = require('discord.js');
+const keep_alive = require('./keep_alive.js')
 const { Configuration, OpenAIApi } = require('openai');
 const client = new Client({
   intents: [
